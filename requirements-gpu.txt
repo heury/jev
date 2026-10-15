@@ -7,3 +7,6 @@ datasets>=3,<5
 huggingface_hub>=0.34,<2
 jupyterlab>=4,<5
 ipykernel>=6,<8
+
+# After installing these dependencies, build the optimized CUDA convolution kernel:
+# python -m pip install --no-build-isolation --no-deps causal-conv1d==1.7.0

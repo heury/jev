@@ -179,6 +179,9 @@ if INSTALL:
     subprocess.check_call([sys.executable, '-m', 'pip', 'install',
                            'unsloth==2026.10.4', 'unsloth_zoo==2026.10.4',
                            'datasets>=3,<5', 'huggingface_hub>=0.34,<2'])
+    # 현재 CUDA PyTorch를 사용해 최적화 convolution 커널을 빌드한다.
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install',
+                           '--no-build-isolation', '--no-deps', 'causal-conv1d==1.7.0'])
     print('설치 완료. 커널을 재시작한 뒤 INSTALL=False로 실행하세요.')
 '''),
 code('''
@@ -330,7 +333,7 @@ args = TrainingArguments(
     per_device_train_batch_size=1, per_device_eval_batch_size=1,
     gradient_accumulation_steps=8,
     max_steps=60 if SMOKE else -1, num_train_epochs=2,
-    warmup_ratio=0.1, learning_rate=2e-4, lr_scheduler_type='cosine', weight_decay=0.01,
+    warmup_steps=0.1, learning_rate=2e-4, lr_scheduler_type='cosine', weight_decay=0.01,
     bf16=is_bfloat16_supported(), fp16=not is_bfloat16_supported(),
     eval_strategy='steps', eval_steps=20, logging_steps=10,
     save_strategy='steps', save_steps=20, save_total_limit=2,
