@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/jev-course.pdf
+.env
+.env.*
+!.env.example
+.venv-gpu/
+.playwright-cli/
+output/playwright/

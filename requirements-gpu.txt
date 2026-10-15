@@ -1,0 +1,9 @@
+# Linux NVIDIA CUDA environment, Python 3.11 or 3.12.
+# Install CUDA-compatible PyTorch per https://pytorch.org/get-started/locally/ first.
+# This is an entry-point specification, not a fully validated CUDA lockfile.
+unsloth==2026.10.4
+unsloth_zoo==2026.10.4
+datasets>=3,<5
+huggingface_hub>=0.34,<2
+jupyterlab>=4,<5
+ipykernel>=6,<8

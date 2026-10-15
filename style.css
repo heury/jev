@@ -1,0 +1,46 @@
+:root { --slidev-theme-primary: #65e0bf; }
+.slidev-layout { background: #101a2b; color: #e8edf5; padding: 42px 52px; font-size: 21px; line-height: 1.5; }
+.slidev-layout h1 { color: #f7f9ff; font-size: 36px; font-weight: 750; line-height: 1.22; margin-bottom: 24px; letter-spacing: -.035em; }
+.slidev-layout h3 { color: #e8edf5; font-size: 24px; font-weight: 650; margin: 12px 0; }
+.slidev-layout p { margin: 15px 0; }
+.slidev-layout th { color: #65e0bf; font-weight: 600; }
+.slidev-layout td, .slidev-layout th { padding: 10px 14px; border-color: #34445b; font-size: 19px; }
+.slidev-layout code { color: #bcecdc; }
+.slidev-layout pre { font-size: 16px !important; line-height: 1.5 !important; border: 1px solid #34445b; }
+.slidev-layout li { margin: 9px 0; }
+.eyebrow { color: #65e0bf; letter-spacing: .18em; font-size: 15px; font-weight: 700; margin-bottom: 25px; }
+.subtitle { color: #65e0bf; font-size: 27px; margin-top: 30px; }
+.cover-foot { position: absolute; bottom: 42px; color: #91a3be; font-size: 17px; }
+.card { border: 1px solid #34445b; border-top: 3px solid #65e0bf; border-radius: 12px; padding: 22px; background: #18273c; font-size: 18px; }
+.card code { font-size: 15px; }
+.num { color: #65e0bf; font-size: 16px; letter-spacing: .06em; }
+.callout { background: #1b363e; border-left: 3px solid #65e0bf; padding: 14px 20px; margin-top: 25px; font-size: 19px; border-radius: 0 8px 8px 0; }
+.source { color: #a3b3c9; font-size: 16px; margin-top: 18px; }
+.slidev-layout a { color: #81dac8; }
+.tag { display: inline-block; margin-left: 8px; padding: 1px 9px; border: 1px solid #34445b; border-radius: 999px; color: #65e0bf; font-size: 15px; vertical-align: middle; }
+/* 의미 색 체계: 민트 = 핵심, 주황 = 주의·하지 말 것, 회색 = 합성·설명용 값 */
+.slidev-layout strong, .slidev-layout b { color: #65e0bf; font-weight: 700; }
+.callout.warn { background: #33281c; border-left-color: #f5a35c; }
+.callout.warn strong, .callout.warn b { color: #ffc58f; }
+.callout.syn { background: #212a37; border-left-color: #8b97a8; color: #c9d2de; }
+.tag.warn { color: #f5a35c; border-color: #7a5530; }
+.tag.syn { color: #b4bfcd; border-color: #4a5568; margin-left: 0; margin-right: 8px; }
+.legend { display: flex; gap: 22px; align-items: center; font-size: 15px; color: #a3b3c9; margin-top: 14px; }
+.legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 7px; vertical-align: -1px; }
+.sw.key { background: #65e0bf; } .sw.warn { background: #f5a35c; } .sw.syn { background: #8b97a8; } .sw.concept { background: #5b7aa8; }
+.big-num { font-size: 58px; font-weight: 800; line-height: 1; letter-spacing: -.03em; color: #65e0bf; }
+.big-num.muted { color: #c9d2de; }
+.stat-label { font-size: 16px; color: #a3b3c9; margin-top: 6px; }
+.stat-card { border: 1px solid #34445b; border-radius: 12px; padding: 24px; background: #18273c; }
+.stat-card .tag { margin: 14px 0 0; }
+.caption { font-size: 15px; color: #a3b3c9; margin-top: 6px; }
+.chart { display: block; width: 100%; max-width: 100%; height: auto; max-height: 300px; font-family: Pretendard, 'Noto Sans KR', sans-serif; }
+.gbar { position: relative; width: 210px; height: 14px; background: #1b2638; border-radius: 7px; }
+.gbar i { position: absolute; top: 0; height: 100%; border-radius: 7px; background: #5b7aa8; }
+.gbar i.lab { background: #65e0bf; }
+.slidev-layout .mermaid { margin: 4px 0 8px; }
+.slidev-layout .w { color: #f5a35c; font-weight: 700; }
+/* 실습 위치 배지와 정상 체크포인트 */
+.run { position: absolute; right: 24px; top: 12px; font-size: 15px; font-weight: 700; color: #0f1a2b; background: #65e0bf; padding: 3px 12px; border-radius: 999px; }
+.check { font-size: 16px; color: #a3e9d5; margin-top: 10px; }
+.check::before { content: '✓ 정상: '; font-weight: 700; color: #65e0bf; }
